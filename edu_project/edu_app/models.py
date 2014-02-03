@@ -17,4 +17,4 @@ class SubjAnswerEvaluation(models.Model):
 	answer = models.ForeignKey(SubjAnswer)
 	score = models.FloatField(default=0.5)
 	def __unicode__(self):  # Python 3: def __str__(self):
-		return self.score
+		return unicode(self.score)
